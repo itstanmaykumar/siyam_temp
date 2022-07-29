@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tanmay Kumar">
+
+    <!-- Bootstrap CDN Here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- External CSS Here -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container-fluid p-4">
+        <h5 class="text-gold py-2 fw-bold">Batching Claim(s)</h5>
+        <div class="row">
+            <div class="col-xl-7 col-md-10 row justify-content-around">
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <p class="fw-bolder w-100 my-2">Sort By</p>
+                        <select class="form-select" id="columnName">
+                            <option value="1">Id</option>
+                            <option value="2" selected>Patients</option>
+                            <option value="3">Treating Therapist</option>
+                            <option value="4">Amount</option>
+                            <option value="5">Date</option>
+                            <option value="6">Country</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <p class="fw-bolder w-100 my-2">Patient(s)</p>
+                        <select class="form-select" id="patientName">
+                            <option value="1" selected>Domeniga Minmagh</option>
+                            <option value="2">Jasmine Rawsen</option>
+                            <option value="3">Elysia Briars</option>
+                            <option value="4">Tani Kimmins</option>
+                            <option value="5">Kelcey Wormell</option>
+                            <option value="6">Melesa List</option>
+                            <option value="7">Miller Lawerence</option>
+                            <option value="8">Gianna Maywood</option>
+                            <option value="9">Dulcia Seilmann</option>
+                            <option value="10">Cybil Godbehere</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <p class="fw-bolder w-100 my-2">To Date</p>
+                        <input class="form-select" type="date" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5">
+                <p class="my-2 w-100 invisible">space</p>
+                <button class="btn btn-primary">Go</button>
+                <button class="btn btn-danger">Cancel</button>
+                <button class="btn btn-dark" disabled>Generate Batch</button>
+                <button class="btn btn-primary">Generate CSV</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
